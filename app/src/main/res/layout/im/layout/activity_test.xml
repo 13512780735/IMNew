@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".activity.LoginRegister.TestActivity">
+    <com.bcr.jianxinIM.view.ClearWriteEditText
+        android:id="@+id/edAccount"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width50"
+        android:background="@null"
+        android:hint="请输入帐号"
+        android:inputType="phone"
+        android:textColorHint="@color/text_hint"
+        android:textSize="@dimen/txt_14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/light_grey"></View>
+
+    <com.bcr.jianxinIM.view.ClearWriteEditText
+        android:id="@+id/edPwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width50"
+        android:background="@null"
+        android:hint="请输入登录密码"
+        android:textColorHint="@color/text_hint"
+        android:inputType="textPassword"
+        android:textSize="@dimen/txt_14" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/light_grey"></View>
+    <com.bcr.jianxinIM.view.BorderTextView
+        android:id="@+id/tvLogin2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width40"
+        android:layout_marginLeft="@dimen/width20"
+        android:layout_marginRight="@dimen/width20"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/width50"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_16"
+        app:contentBackColor="@color/theme_color"
+        app:cornerRadius="@dimen/dp_10" />
+
+
+</LinearLayout>

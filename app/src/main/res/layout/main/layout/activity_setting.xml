@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.main.SettingActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_margin="@dimen/dp_5"
+                    android:text="安全" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                   >
+
+                    <TextView
+                        android:id="@+id/tvEditPwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/width50"
+                        android:drawableRight="@mipmap/icon_right"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="修改登录密码" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/listview_divider"></View>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="@dimen/width50"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/width50"
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:text="绑定手机号" />
+
+                        <TextView
+                            android:id="@+id/tvEditPhone"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="@dimen/dp_10"
+                            android:hint="未绑定"
+                            android:gravity="center_vertical|right"
+                            android:drawablePadding="@dimen/dp_10"
+                            android:drawableRight="@mipmap/icon_right" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:visibility="gone"
+                        android:background="@color/listview_divider"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/width50"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/width50"
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:text="绑定微信" />
+
+                        <TextView
+                            android:id="@+id/tvBindWechat"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="@dimen/dp_10"
+                            android:hint="未绑定"
+                            android:gravity="center_vertical|right"
+                            android:drawablePadding="@dimen/dp_10"
+                            android:drawableRight="@mipmap/icon_right" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:visibility="gone"
+                        android:background="@color/listview_divider"></View>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/width50"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/width50"
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:text="绑定QQ" />
+
+                        <TextView
+                            android:id="@+id/tvBindQQ"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="@dimen/dp_10"
+                            android:hint="未绑定"
+                            android:gravity="center_vertical|right"
+                            android:drawablePadding="@dimen/dp_10"
+                            android:drawableRight="@mipmap/icon_right" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_5"
+                    android:text="隐私" />
+
+                <LinearLayout
+                    android:id="@+id/llAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+
+                    >
+                    <TextView
+                        android:id="@+id/tvAdd"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/width50"
+                        android:drawableRight="@mipmap/icon_right"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dp_10"
+                        android:text="添加我的方式" />
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+
+                        android:background="@color/listview_divider"></View>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/width50"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="@dimen/width50"
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:text="加我好友时需要验证" />
+                        <com.bcr.jianxinIM.im.ui.widget.switchbutton.SwitchButton
+                            android:id="@+id/sw_freind_validation"
+                            style="@style/SwitchButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            app:kswAnimationDuration="300"
+                            app:kswBackDrawable="@drawable/ios_back_drawable"
+                            app:kswBackMeasureRatio="1.4"
+                            app:kswThumbDrawable="@drawable/ios_thumb"
+                            app:kswThumbMarginBottom="-8dp"
+                            app:kswThumbMarginLeft="-5dp"
+                            app:kswThumbMarginRight="-5dp"
+                            app:kswThumbMarginTop="-2.5dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_5"
+                    android:text="其他" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                   >
+
+                    <LinearLayout
+                        android:id="@+id/llClear"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/width50"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/width50"
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:text="清除缓存" />
+
+                        <TextView
+                            android:id="@+id/tvClear"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:drawableRight="@mipmap/icon_right"
+                            android:drawablePadding="@dimen/dp_10"
+                            android:gravity="center_vertical|right"
+                            android:padding="@dimen/dp_10"
+                            android:text="0.00M" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/listview_divider"></View>
+
+                    <TextView
+                        android:id="@+id/tvMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/width50"
+                        android:drawableRight="@mipmap/icon_right"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:visibility="gone"
+                        android:text="消息通知" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvChangeAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/width50"
+                    android:layout_marginTop="@dimen/width20"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="切换帐号"
+                    android:textColor="@color/button_bg"></TextView>
+
+                <TextView
+                    android:id="@+id/tvLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/width50"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginBottom="@dimen/width20"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="退出当前帐号"
+                    android:textColor="@color/red"></TextView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llLoadingBg"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:alpha="0.2"
+        android:background="@drawable/border_radius_loading_bg"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/alLoginLoading"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        app:indicatorName="BallSpinFadeLoaderIndicator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout6" />
+</android.support.constraint.ConstraintLayout>

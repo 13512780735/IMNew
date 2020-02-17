@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:roundiv="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activity.main.SwitchAcountActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+       >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="轻触头像以切换帐号"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_24" />
+
+        <View
+            android:layout_width="@dimen/width120"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/width40"
+            android:background="@color/light_grey"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/width40"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/width120"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.bcr.jianxinIM.view.RoundImageView
+                    android:id="@+id/ivAvatar01"
+                    android:layout_width="@dimen/width60"
+                    android:layout_height="@dimen/width60"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/dp_5"
+                    roundiv:left_bottom_radius="5dp"
+                    roundiv:left_top_radius="5dp"
+                    roundiv:right_bottom_radius="5dp"
+                    roundiv:right_top_radius="5dp" />
+
+                <TextView
+                    android:id="@+id/tvId01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="ID:123456"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:drawableLeft="@drawable/icon_dot"
+                    android:gravity="center_vertical"
+                    android:text="当前使用"
+                    android:textSize="@dimen/txt_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_add01"
+                android:layout_width="@dimen/width120"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:id="@+id/fl_account01"
+                    android:layout_width="@dimen/width70"
+                    android:layout_height="@dimen/width70"
+                    android:layout_gravity="center_horizontal">
+
+                    <com.bcr.jianxinIM.view.RoundImageView
+                        android:id="@+id/ivAvatar02"
+                        android:layout_width="@dimen/width60"
+                        android:layout_height="@dimen/width60"
+                        android:layout_margin="@dimen/dp_5"
+                        roundiv:left_bottom_radius="5dp"
+                        roundiv:left_top_radius="5dp"
+                        roundiv:right_bottom_radius="5dp"
+                        roundiv:right_top_radius="5dp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_del"
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/ivdel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/icon_del" />
+
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tvId02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="ID:123456"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_add"
+                android:layout_width="@dimen/width120"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.bcr.jianxinIM.view.RoundImageView
+                    android:layout_width="@dimen/width70"
+                    android:layout_height="@dimen/width70"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/icon_add"
+                    roundiv:left_bottom_radius="5dp"
+                    roundiv:left_top_radius="5dp"
+                    roundiv:right_bottom_radius="5dp"
+                    roundiv:right_top_radius="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="添加帐号"
+                    android:textSize="@dimen/txt_14" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    <TextView
+        android:id="@+id/tvDel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width40"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/width40"
+        android:gravity="center_horizontal"
+        android:text="前往清除登录痕迹"
+        android:visibility="invisible"
+        android:textColor="@color/title_bg"
+    />
+    </RelativeLayout>
+</LinearLayout>

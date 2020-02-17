@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/width80"
+    xmlns:roundiv="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:paddingLeft="@dimen/dp_10"
+        android:focusable="false"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:layout_height="match_parent">
+
+        <CheckBox
+            android:id="@+id/ch_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:button="@drawable/register_check"
+            android:focusable="false"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:visibility="gone"
+            android:padding="@dimen/dp_10" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:focusable="false"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:singleLine="true"
+            android:maxEms="20"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+           />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_goods_new_price"
+                android:text="xxx"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_goods_old_price"
+                android:layout_width="wrap_content"
+                android:text="xxx"
+                android:layout_toRightOf="@+id/tv_goods_new_price"
+                android:layout_marginLeft="@dimen/width20"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <com.bcr.jianxinIM.view.RoundImageView
+        android:id="@+id/tv_goods_picture"
+        android:layout_width="@dimen/width60"
+        android:layout_height="@dimen/width60"
+        roundiv:leftTopRadius="5dp"
+        roundiv:rightTopRadius="5dp"
+        android:layout_marginRight="@dimen/dp_10"
+        roundiv:rightBottomRadius="5dp"
+        roundiv:leftBottomRadius="5dp"
+        android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/listview_divider"></View>
+</LinearLayout>

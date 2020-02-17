@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".im.ui.activity.GroupQRCodeActivity">
+        <LinearLayout
+            android:id="@+id/ll01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:id="@+id/profile_fl_card_capture_area_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_40"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:orientation="vertical"
+                    android:background="@drawable/profile_bg_qrcode"
+                    android:layout_marginTop="@dimen/width60">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/width80"
+                        android:orientation="horizontal">
+
+                        <com.bcr.jianxinIM.view.CircleImageView
+                            android:id="@+id/ivAvatar"
+                            android:layout_width="@dimen/width60"
+                            android:layout_height="@dimen/width60"
+                            android:src="@mipmap/icon_wangwang"
+                            android:layout_margin="@dimen/dp_10"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:text="木头人"
+                                android:id="@+id/tvName"
+                                android:textColor="@color/black"
+                                android:gravity="center_vertical"
+                                android:paddingBottom="@dimen/dp_5"
+                                android:textSize="@dimen/txt_16"
+                                android:layout_weight="1"/>
+                            <TextView
+                                android:id="@+id/tvAccount"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:textColor="@color/text_gray"
+                                android:paddingTop="@dimen/dp_5"
+                                android:gravity="top"
+                                android:text="长沙"
+                                android:visibility="gone"
+                                android:layout_weight="1"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/color_divider_line" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp">
+
+                        <ImageView
+                            android:id="@+id/profile_iv_qr_code"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            tools:src="@drawable/common_default_portrait" />
+
+                        <TextView
+                            android:id="@+id/profile_tv_qr_card_info_no_code_describe"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="该群已开启进群认证，只能好友邀请进群"
+                            android:textColor="@color/default_main_text"
+                            android:textSize="15sp"
+                            android:visibility="gone" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/profile_tv_qr_card_info_describe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="20dp"
+                        android:textColor="@color/color_gray_text"
+                        tools:text="扫一扫上面的二维码，加我为好友" />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSave"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width40"
+                android:text="保存到手机"
+                android:visibility="gone"
+                android:gravity="center"
+                android:background="@color/white"
+                android:textColor="@color/button_bg"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llLoadingBg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:alpha="0.2"
+            android:background="@drawable/border_radius_loading_bg"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/alLoginLoading"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            app:indicatorName="BallSpinFadeLoaderIndicator"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ll01" />
+    </android.support.constraint.ConstraintLayout>

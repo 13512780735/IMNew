@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path
+        name="rc_external_path"
+        path="." />
+    <root-path
+        name="rc_root_path"
+        path="" />
+    <external-path path="Android/data/com.bcr.jianxinIM/" name="files_root" />
+    <external-path path="." name="external_storage_root" />
+</paths>

@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/seal_bg"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/layout_head"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btn_left"
+            android:layout_width="@dimen/width40"
+            android:layout_height="@dimen/width40"
+            android:background="@drawable/selector_btn_back"
+            android:src="@drawable/back"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/dp_8"
+            android:onClick="onHeadLeftButtonClick"
+            android:textColor="@drawable/selector_btn_top" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:visibility="gone"
+            android:background="@color/theme_color" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:maxLength="20"
+            android:layout_marginLeft="12dp"
+            android:text=""
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_right"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:onClick="onHeadRightButtonClick"
+            android:maxLines="1"
+            android:layout_gravity="center_vertical"
+            android:textColor="@drawable/selector_btn_top" />
+
+        <TextView
+            android:id="@+id/text_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:clickable="true"
+            android:maxLines="1"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/group_info"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <com.bcr.jianxinIM.im.server.widget.SelectableRoundedImageView
+            android:id="@+id/ac_iv_user_portrait"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/icon_wangwang"
+            android:scaleType="centerCrop"
+            app:sriv_left_bottom_corner_radius="32dip"
+            app:sriv_left_top_corner_radius="32dip"
+            app:sriv_right_bottom_corner_radius="32dip"
+            app:sriv_right_top_corner_radius="32dip" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/contact_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLength="16"
+                android:maxLines="1"
+                android:textColor="@color/group_list_black_textview"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/contact_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:maxLines="1"
+                android:textColor="#999"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/contact_below"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLength="16"
+                android:maxLines="1"
+                android:textColor="#999"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/user_online_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:visibility="gone" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:text="朋友圈"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:layout_width="0dp"
+            android:padding="@dimen/dp_5"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></android.support.v7.widget.RecyclerView>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon_right"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ac_ll_note_name"
+        android:layout_width="match_parent"
+        android:layout_height="47.5dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:onClick="setDisplayName">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:text="@string/setdisplayname"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/profile_siv_detail_blacklist"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:onClick="setDisplayName">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:text="加入黑名单"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/del_siv_detail_blacklist"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:visibility="gone"
+        android:onClick="setDisplayName">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:text="移除黑名单"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/profile_siv_detail_delete_contact"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:onClick="setDisplayName">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:text="删除联系人"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llsw_member_banned"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ffffff"
+        android:layout_marginTop="1dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="设置禁言"
+            android:textColor="@color/text_color"
+            android:textSize="16sp" />
+
+        <com.bcr.jianxinIM.im.ui.widget.switchbutton.SwitchButton
+            android:id="@+id/sw_member_banned"
+            style="@style/SwitchButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            app:kswAnimationDuration="300"
+            app:kswBackDrawable="@drawable/ios_back_drawable"
+            app:kswBackMeasureRatio="1.4"
+            app:kswThumbDrawable="@drawable/ios_thumb"
+            app:kswThumbMarginBottom="-8dp"
+            app:kswThumbMarginLeft="-5dp"
+            app:kswThumbMarginRight="-5dp"
+            app:kswThumbMarginTop="-2.5dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ac_ll_chat_button_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:onClick="startChat"
+            android:gravity="center"
+            android:text="@string/start_chat"
+            android:textColor="@color/theme_color"
+            android:textSize="16sp" />
+
+        <!--CallKit start-->
+        <TextView
+            android:id="@+id/tvVoice"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:onClick="startVoice"
+            android:gravity="center"
+            android:text="@string/start_voice"
+            android:textColor="@color/theme_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvVideo"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:onClick="startVideo"
+            android:text="@string/start_video"
+            android:textColor="@color/theme_color"
+            android:textSize="16sp" />
+        <!--CallKit end-->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ac_bt_add_friend"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_submit_style"
+        android:text="@string/add_friend"
+        android:textColor="#FFF"
+        android:gravity="center"
+        android:textSize="16sp"
+
+        />
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f6"
+    android:orientation="vertical">
+
+
+    <com.bcr.jianxinIM.view.BorderRelativeLayout
+        android:layout_width="match_parent"
+        app:contentBackColor="@color/white"
+        android:layout_margin="@dimen/dp_10"
+        app:cornerRadius="@dimen/dp_8"
+        app:strokeWidth01="1dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:strokeColor01="@color/rc_divider_line"
+        android:layout_height="@dimen/width40">
+
+
+        <com.bcr.jianxinIM.im.server.widget.ClearWriteEditText
+            android:id="@+id/search_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:hint="手机号/ID"
+            android:text=""
+            android:inputType="phone"
+            android:maxLength="11"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:drawablePadding="@dimen/dp_10"
+            android:drawableLeft="@drawable/sealtalk_search"
+            />
+
+    </com.bcr.jianxinIM.view.BorderRelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/search_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.bcr.jianxinIM.im.server.widget.SelectableRoundedImageView
+            android:id="@+id/search_header"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="6dp"
+            android:src="@mipmap/icon_wangwang"
+            android:scaleType="centerCrop"
+            app:sriv_left_bottom_corner_radius="20dp"
+            app:sriv_left_top_corner_radius="20dp"
+            app:sriv_right_bottom_corner_radius="20dp"
+            app:sriv_right_top_corner_radius="20dp" />
+
+        <TextView
+            android:id="@+id/search_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:textColor="@color/group_list_gray"
+            android:textSize="18sp" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/rp_arrow" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvNoData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="查无此人"/>
+
+</LinearLayout>

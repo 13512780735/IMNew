@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <com.bcr.jianxinIM.im.server.widget.SelectableRoundedImageView
+        android:id="@+id/iv_header"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        app:sriv_left_bottom_corner_radius="5dip"
+        app:sriv_left_top_corner_radius="5dip"
+        app:sriv_right_bottom_corner_radius="5dip"
+        app:sriv_right_top_corner_radius="5dip"
+        android:src="@mipmap/icon_wangwang"
+        android:scaleType="centerCrop"/>
+</RelativeLayout>

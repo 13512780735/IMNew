@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#3EB7EA</color>
+    <color name="colorPrimar">#90a2cc</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="transparent">#00000000</color><!--透明色 -->
+    <color name="white">#ffffff</color>
+    <color name="green">#4fd065</color>
+    <color name="primary">#67b5fd</color>
+    <color name="text_hint">#C1E4F7</color>
+    <color name="button_bg">#3EB7EA</color>
+    <color name="theme_color">#3EB7EA</color>
+    <color name="unSelect_color">#BBBBBB</color>
+    <color name="status_text">#ffffffff</color>
+    <!-- 主体文字,标题/标签 -->
+    <color name="txt_black">#2e3134</color>
+    <!-- 内容文字,正文 -->
+    <color name="txt_gray">#808589</color>
+    <color name="txt_red">#F14A4A</color>
+    <color name="txt_orange">#F9854F</color>
+    <color name="txt_yello">#ffea01</color>
+    <color name="defualt_window_background">#F2F2F2</color>
+
+    <!-- 辅助文字,提示 -->
+    <color name="txt_light_gray">#aaaaaa</color>
+    <color name="txt_light_gray_in_parimary">#C6D4FE</color>
+    <!-- 背景色 -->
+    <color name="bg_gray">#f0f0f0</color>
+    <color name="home_title_bg">#F7F7F7</color>
+
+    <!-- 分割线 -->
+    <color name="divider_gray_in_white">#D6D7DC</color>
+    <color name="divider_gray_in_gray">#d6d6d6</color>
+
+
+    <color name="black">#000000</color>
+    <color name="grey">#C2C2C2</color>
+    <color name="map_bg">#F6F5EF</color>
+    <color name="monitor_state1">#29CF57</color>
+    <color name="monitor_state2">#FF5252</color>
+    <color name="text">#9E9C9D</color>
+    <color name="title_red">#FF537B</color>
+    <color name="title_color">#333333</color>
+    <color name="divider">#F0F0F0</color>
+    <color name="text_grey">#6F6F6F</color>
+    <color name="title_bg">#FF242736</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask" tools:ignore="DuplicateDefinition">#60000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="text_orange">#E18D2E</color>
+    <color name="light_grey">#A6A6A6</color>
+    <color name="verylight_grey">#ECEEF3</color>
+    <color name="grey_searchitem">#DBDBDB</color>
+    <color name="divider_grey">#F5F5F5</color>
+    <color name="text_dark_grey">#606060</color>
+    <color name="listview_divider">#E7E7E7</color>
+
+    <!-- 分割线 -->
+    <!--<color name="red">#ff403c</color>-->
+
+    <color name="scan_corner_color">#5588FC</color>
+    <color name="car_line">#de3720</color>
+
+    <color name="txt_ty">#A2FFA9</color>
+    <color name="txt_ty_no">#FFCE7A</color>
+    <color name="hint_color">#66ffffff</color>
+    <color name="login_color">#1492ff</color>
+    <color name="red">#ff0000</color>
+    <color name="tv_color">#e0e0e0</color>
+    <!--城市-->
+    <color name="colorDefault">#ffffff</color>
+    <color name="colorBackground">#f1f0f6</color>
+    <color name="colorText">#9b9b9b</color>
+    <color name="cp_colorAccent">#F3F3F3</color>
+    <color name="cp_colorPrimary">@color/cp_colorAccent</color>
+    <color name="cp_colorPrimaryDark">@color/cp_colorAccent</color>
+
+    <color name="cp_divider">#E5E5E5</color>
+    <color name="cp_shadow">#AAEBEBEB</color>
+    <color name="cp_common_bg">#FAFAFA</color>
+    <color name="cp_content_bg">@color/cp_colorAccent</color>
+    <color name="cp_gray">#8c8c8c</color>
+    <color name="cp_gray_deep">#5c5c5c</color>
+    <color name="cp_alpha_gray">#CC646464</color>
+    <color name="cp_theme_gray">#646464</color>
+
+    <!--融云-->
+    <color name="main_theme_color">#0195ff</color>
+    <color name="seal_login_text_button_color">#999999</color>
+    <color name="dark_white">#E5E5E5</color>
+    <color name="seal_search_title_bar_bg">#0195ff</color>
+    <color name="seal_search_title_bar_et_hite">#8ed0ff</color>
+    <color name="seal_search_title_bar_line">#0083e0</color>
+    <color name="color_gray_text">#939393</color>
+    <color name="color_divider_line">#E5E5E5</color>
+    <color name="seal_select_country_text_color">#4a4a4a</color>
+    <color name="seal_select_country_bg">#f1f1f1</color>
+    <color name="seal_title_bg">#0195ff</color>
+    <color name="seal_bg">#f0f0f6</color>
+    <color name="seal_title_bar_line">#0083e0</color>
+    <color name="text_hint_gray">#e6e6e6</color>>
+
+    <color name="common_divider">#dfdfdd</color>
+
+
+    <color name="color_black_text">#333333</color>
+    <color name="seal_evaluate_dialog_divider">#eceef3</color>
+    <color name="seal_evaluate_dialog_bg">#0e8cea</color>
+    <color name="seal_evaluate_text_color">#3c4d65</color>
+    <color name="seal_evaluate_edittext">#939dab</color>
+    <color name="seal_conversation_annouce_bg">#FFF5ED</color>
+    <color name="seal_conversation_annouce_text">#9D5438</color>
+    <color name="seal_new_friends_is_null_text">#999999</color>
+    <color name="seal_new_friends_divider">#dfdfdd</color>
+    <color name="seal_new_friends_name_text">#353535</color>
+    <color name="seal_new_friends_status_text">#999999</color>
+
+    <!--contact-->
+    <color name="seal_contact_content_bg">#0ff</color>
+    <color name="seal_contact_rv_bg">#ebebeb</color>
+    <color name="seal_contact_dialog_text_color">#ffffffff</color>
+    <color name="seal_contact_friend_item_name_bg">#353535</color>
+    <color name="seal_contact_friend_devi_color">#ccc</color>
+
+    <color name="seal_main_title_bg">#0195ff</color>
+    <color name="seal_main_title_more_text_color">#353535</color>
+
+    <color name="seal_setting_item_content">#353535</color>
+    <color name="seal_setting_item_value">#666666</color>
+    <color name="seal_setting_item_divider">#dfdfdd</color>
+    <color name="seal_mime_bg">#ebebeb</color>
+    <color name="seal_userinfo_item_name_text">#353535</color>
+    <color name="seal_mine_about_power_text">#999999</color>
+    <color name="seal_search_name_text_color">#353535</color>
+    <color name="seal_search_description_text_color">#999999</color>
+    <color name="seal_search_devi_color">#f0f0f6</color>
+    <color name="seal_search_show_more_text_color">#7ca1c9</color>
+
+    <color name="seal_userinfo_item_divider">#dfdfdd</color>
+    <color name="seal_update_name_text_color">#999999</color>
+    <color name="seal_update_name_tips">#FF1612</color>
+    <color name="seal_update_name_edit">#353535</color>
+    <color name="seal_dialog_select_picture_btn_text">#333333</color>
+    <color name="seal_dialog_select_picture_divider">#dfdfdd</color>
+    <color name="seal_spannel_color">#0099ff</color>
+
+    <color name="common_dialog_base_line">#E5E5E5</color>
+    <color name="common_dialog_base_text">@color/color_black_text</color>
+    <color name="common_dialog_base_positive">@color/color_black_text</color>
+    <color name="seal_set_account_update_password_tag">#999999</color>
+    <color name="seal_set_account_update_password_value">#dadada</color>
+    <color name="seal_privacy_blacklist_text">#999999</color>
+    <color name="seal_search_empty_text_color">#999999</color>
+
+    <!-- 界面改版使用 -->
+    <color name="text_black">#262626</color>
+    <color name="light_gray">#e2e2e2</color>
+    <color name="text_gray">#939393</color>
+    <color name="text_light_gray">#BDBDBD</color>
+    <color name="text_blue">#368AE8</color>
+
+    <color name="text_white">#FFFFFF</color>
+    <color name="bg_area_dim_white">#F2F2F3</color>
+    <color name="default_main_text">@color/text_black</color>
+    <color name="default_sub_text">@color/text_gray</color>
+    <color name="default_clickable_text">#368AE8</color>
+    <color name="default_text_hint_color">@color/text_light_gray</color>
+    <color name="default_main_area_background">@color/bg_area_dim_white</color>
+    <color name="color_list_item_hover">#DFDFDD</color>
+    <color name="seal_forward_message_send">#3595FF</color>
+    <color name="color_tab_indicator_bg">#FAFAFA</color>
+    <color name="color_primary">#3A91F3</color>
+    <color name="color_main_tab">#ffffff</color>
+    <color name="seal_user_detail_userinfo_text_color">#999999</color>
+    <color name="seal_group_manager_item_role">@color/text_gray</color>
+    <color name="seal_search_line_color">#DFDFDD</color>
+    <color name="edge_gray">@color/light_gray</color>
+    <!--个人信息-->
+    <color name="seal_account_staccount_edit_hint">#9A9A9A</color>
+
+    <color name="seal_group_notice_item_agree">#3098FC</color>
+    <color name="seal_group_notice_item_time">#9B9B9B</color>
+    <color name="seal_dialog_clean_notice_cancel">#0076FF</color>
+
+    <color name="seal_group_detail_clean_tips">#8B8B8B</color>
+
+
+    <color name="text_line_color">#dfdfdd</color>
+    <color name="text_black_color">#333333</color>
+    <color name="text_tips_color">#666666</color>
+    <color name="mine_head_color">#cccccc</color>
+    <color name="text_color">#353535</color>
+    <color name="press">#e8e8e8</color>
+    <color name="cs_evaluate_dialog_divider">#eceef3</color>
+    <color name="cs_evaluate_bottom_text_backgroud">#0e8cea</color>
+    <color name="cs_evaluate_text_color">#3c4d65</color>
+    <color name="cs_evaluate_text_border">#B4BDCB</color>
+    <color name="cs_evaluate_text_border_hover">#91BCFF</color>
+    <color name="cs_evaluate_text_selected">#4D8DF0</color>
+    <color name="cs_evaluate_text_unselected">#939DAB</color>
+    <color name="cs_evaluate_background_selected">#E3EEFF</color>
+    <color name="cs_evaluate_edittext_background">#f1f3f5</color>
+    <color name="cs_evaluate_edittext_textcolor">#939dab</color>
+    <color name="de_title_bg">#0195ff</color>
+    <color name="group_list_gray">#999999</color>
+    <color name="group_list_black_textview">#353535</color>
+    <color name="ac_filter_string_color">#0099ff</color>
+    <color name="de_action_white">@android:color/white</color>
+</resources>

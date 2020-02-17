@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/icon_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.LoginRegister.ForgetPwdActivity">
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/width20"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:layout_width="@dimen/width60"
+                android:layout_height="@dimen/width60"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/ic_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="安全沟通 便捷体验"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="@dimen/width30"
+                android:layout_marginLeft="@dimen/width30"
+                android:layout_marginTop="@dimen/width30"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/width30"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+            <com.bcr.jianxinIM.view.BorderRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width45"
+                app:contentBackColor="#ffffff"
+                app:cornerRadius="@dimen/dp_10">
+
+                <com.bcr.jianxinIM.im.server.widget.ClearWriteEditText
+                    android:id="@+id/edAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/width45"
+                    android:background="@null"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:inputType="phone"
+                    android:hint="请输入手机号码"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/txt_14" />
+            </com.bcr.jianxinIM.view.BorderRelativeLayout>
+
+            <com.bcr.jianxinIM.view.BorderRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width45"
+                app:contentBackColor="#ffffff"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                app:cornerRadius="@dimen/dp_10">
+
+                    <com.bcr.jianxinIM.im.server.widget.ClearWriteEditText
+                        android:id="@+id/edCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/width45"
+                        android:layout_toLeftOf="@+id/tvCode"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:background="@null"
+                        android:inputType="number"
+                        android:hint="请输入短信验证"
+                        android:textColorHint="@color/text_hint"
+                        android:textSize="@dimen/txt_14" />
+
+                    <TextView
+                        android:id="@+id/tvCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:text="获取验证码"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/txt_14" />
+            </com.bcr.jianxinIM.view.BorderRelativeLayout>
+
+                <com.bcr.jianxinIM.view.BorderRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/width45"
+                    app:contentBackColor="#ffffff"
+                    app:cornerRadius="@dimen/dp_10">
+                <com.bcr.jianxinIM.im.server.widget.ClearWriteEditText
+                    android:id="@+id/edPwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/width45"
+                    android:background="@null"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:hint="请输入新密码(最少8位)"
+                    android:textColorHint="@color/text_hint"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/txt_14" />
+                </com.bcr.jianxinIM.view.BorderRelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/light_grey"></View>
+                <com.bcr.jianxinIM.view.BorderRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_height="@dimen/width45"
+                    app:contentBackColor="#ffffff"
+                    app:cornerRadius="@dimen/dp_10">
+                    <com.bcr.jianxinIM.im.server.widget.ClearWriteEditText
+                        android:id="@+id/edConfirmPwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/width45"
+                        android:background="@null"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:hint="请确认新密码(最少8位)"
+                        android:textColorHint="@color/text_hint"
+                        android:inputType="textPassword"
+                        android:textSize="@dimen/txt_14" />
+                </com.bcr.jianxinIM.view.BorderRelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/light_grey"></View>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <com.bcr.jianxinIM.view.BorderTextView
+                    android:id="@+id/tvFinish"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/width45"
+                    android:layout_marginTop="@dimen/width20"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:gravity="center"
+                    android:text="完成"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_16"
+                    app:contentBackColor="#999999"
+                    app:cornerRadius="@dimen/dp_10" />
+
+
+            </LinearLayout>
+            </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llLoadingBg"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.2"
+        android:background="@drawable/border_radius_loading_bg"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/alLoginLoading"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        app:indicatorName="BallSpinFadeLoaderIndicator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout4" />
+</android.support.constraint.ConstraintLayout>

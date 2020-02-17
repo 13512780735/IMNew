@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/icon_bg"
+    tools:context=".activity.LoginRegister.PerfectActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/rl_titlebar"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width20"
+            android:layout_marginTop="@dimen/width40"
+            android:layout_marginRight="@dimen/width20"
+            android:orientation="vertical">
+
+            <com.bcr.jianxinIM.view.CircleImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="@dimen/width70"
+                android:layout_height="@dimen/width70"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/icon_userbg" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dp_10"
+                android:text="上传头像"
+                android:textColor="@color/white" />
+
+
+            <com.bcr.jianxinIM.view.BorderRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width45"
+                android:layout_marginTop="@dimen/width20"
+                app:contentBackColor="@color/white"
+                app:cornerRadius="@dimen/dp_10">
+
+                <com.bcr.jianxinIM.view.ClearWriteEditText
+                    android:id="@+id/edNickName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="请输入昵称"
+                    android:paddingRight="@dimen/width25"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/txt_14" />
+
+            </com.bcr.jianxinIM.view.BorderRelativeLayout>
+
+            <com.bcr.jianxinIM.view.BorderRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width45"
+                android:layout_marginTop="@dimen/width20"
+                app:contentBackColor="@color/white"
+                app:cornerRadius="@dimen/dp_10">
+
+                <TextView
+                    android:id="@+id/tvGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:drawableRight="@mipmap/icon_right"
+                    android:gravity="center"
+                    android:hint="请选择性别"
+                    android:paddingRight="@dimen/dp_10"
+                    android:textColorHint="@color/text_hint" />
+
+            </com.bcr.jianxinIM.view.BorderRelativeLayout>
+
+            <com.bcr.jianxinIM.view.BorderRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width45"
+                android:layout_marginTop="@dimen/width20"
+                app:contentBackColor="@color/white"
+                app:cornerRadius="@dimen/dp_10">
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:drawableRight="@mipmap/icon_right"
+                    android:gravity="center"
+                    android:hint="请选择城市"
+                    android:paddingRight="@dimen/dp_10"
+                    android:textColorHint="@color/text_hint" />
+
+            </com.bcr.jianxinIM.view.BorderRelativeLayout>
+
+
+            <com.bcr.jianxinIM.view.BorderTextView
+                android:id="@+id/tvConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width45"
+                android:layout_marginTop="@dimen/dp_40"
+                android:gravity="center"
+                android:text="完成"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_16"
+                app:contentBackColor="@color/button_bg"
+                app:cornerRadius="@dimen/dp_10" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llLoadingBg"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.2"
+        android:background="@drawable/border_radius_loading_bg"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/alLoginLoading"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        app:indicatorName="BallSpinFadeLoaderIndicator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout4" />
+</android.support.constraint.ConstraintLayout>

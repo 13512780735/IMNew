@@ -1,0 +1,1 @@
+include ':app', ':CallKit', ':CallLib', ':IMKit', ':RCSticker', ':Sight', ':recognizer', ':contactcard', ':IMLib', ':notchtools', ':photoPicker', ':faceview'

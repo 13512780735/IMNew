@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/button_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/back_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/toolbar_left_iv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_back"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLength="12"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_18" />
+
+        <LinearLayout
+            android:id="@+id/right_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/toolbar_righ_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_18" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/titleBar"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+
+    <com.bcr.jianxinIM.view.BorderRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:cornerRadius="@dimen/dp_5"
+        app:contentBackColor="@color/white"
+        android:layout_weight="1"
+        >
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|top"
+        android:hint="请输入您想要发布的内容..."
+        android:maxLines="12"
+        android:minLines="10"
+        android:background="@null"
+        android:layout_margin="15dp"
+        android:textSize="16sp" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/et_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:overScrollMode="never" />
+
+    </com.bcr.jianxinIM.view.BorderRelativeLayout>
+    <TextView
+        android:id="@+id/tv_publish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/login_submit_style"
+        android:gravity="center"
+        android:layout_margin="13dp"
+        android:text="发布"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="match_parent"
+                android:layout_margin="15dp"
+                android:drawableLeft="@mipmap/icon_location"
+                android:text="所在位置"
+                android:gravity="center_vertical"
+                android:drawableRight="@mipmap/icon_right"
+                android:layout_height="48dp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

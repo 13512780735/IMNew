@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent"
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rr_gad"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+       >
+
+        <com.bcr.jianxinIM.im.server.widget.SelectableRoundedImageView
+            android:id="@+id/img_photo"
+            android:layout_width="100dp"
+            app:sriv_left_bottom_corner_radius="5dip"
+            app:sriv_left_top_corner_radius="5dip"
+            app:sriv_right_bottom_corner_radius="5dip"
+            app:sriv_right_top_corner_radius="5dip"
+            android:layout_height="100dp"
+            android:src="@mipmap/icon_wangwang"
+            android:scaleType="centerCrop" />
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/img_delete"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignRight="@+id/rr_gad"
+        android:layout_alignTop="@+id/rr_gad"
+        android:background="@drawable/icon_del" />
+</RelativeLayout>

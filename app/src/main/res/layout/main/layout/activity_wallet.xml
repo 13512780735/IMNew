@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.main.WalletActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/rl_titlebar"></include>
+        <com.bcr.jianxinIM.view.CircleImageView
+            android:layout_width="@dimen/width60"
+            android:layout_height="@dimen/width60"
+            android:src="@mipmap/icon_wallet"
+            android:layout_marginTop="@dimen/width50"
+            android:layout_gravity="center_horizontal"
+            ></com.bcr.jianxinIM.view.CircleImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="余额"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/dp_10"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¥ 888,888.88"
+            android:textSize="@dimen/txt_16"
+            android:textColor="@color/black"
+
+            android:gravity="center_horizontal"
+            android:padding="@dimen/dp_10"/>
+
+        <com.bcr.jianxinIM.view.BorderTextView
+            android:id="@+id/tvRecharge"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width45"
+            android:layout_marginTop="@dimen/width50"
+            android:layout_marginRight="@dimen/dp_10"
+            android:text="充值"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_16"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp_10"
+            app:contentBackColor="@color/button_bg"
+            app:cornerRadius="@dimen/dp_5"
+           />
+        <com.bcr.jianxinIM.view.BorderTextView
+            android:id="@+id/tvWithdrawal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width45"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_10"
+            android:text="提现"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_16"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp_10"
+            app:cornerRadius="@dimen/dp_5"
+            app:contentBackColor="@color/button_bg"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llLoadingBg"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.2"
+        android:background="@drawable/border_radius_loading_bg"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/alLoginLoading"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        app:indicatorName="BallSpinFadeLoaderIndicator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout8" />
+</android.support.constraint.ConstraintLayout>

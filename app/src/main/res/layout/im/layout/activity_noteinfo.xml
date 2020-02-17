@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/rl_titlebar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/callkit_dimen_size_48"
+            android:text="好友备注"
+            android:textColor="#999"
+            android:gravity="center_vertical"
+            android:textSize="16sp" />
+
+        <com.bcr.jianxinIM.im.server.widget.ClearWriteEditText
+            android:id="@+id/notetext"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:lines="1"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:maxLength="16"
+            android:paddingLeft="@dimen/dp_10"
+            android:maxLines="1" />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/notesave"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width50"
+        android:background="@color/theme_color"
+        android:text="完成"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"/>
+</LinearLayout>

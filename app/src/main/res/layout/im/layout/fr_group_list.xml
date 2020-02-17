@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/de_action_white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+    <com.bcr.jianxinIM.view.BorderRelativeLayout
+        android:layout_width="match_parent"
+        app:contentBackColor="@color/white"
+        android:layout_margin="@dimen/dp_10"
+        app:cornerRadius="@dimen/dp_8"
+        app:strokeWidth01="1dp"
+        app:strokeColor01="@color/rc_divider_line"
+        android:layout_height="@dimen/width40">
+
+
+        <com.bcr.jianxinIM.im.server.widget.ClearWriteEditText
+            android:id="@+id/group_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:paddingLeft="@dimen/dp_10"
+            android:hint="请输入群组名"
+            android:text=""
+            android:maxLines="1"
+            android:drawablePadding="@dimen/dp_10"
+            android:drawableLeft="@drawable/sealtalk_search"
+            />
+
+    </com.bcr.jianxinIM.view.BorderRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp"
+        android:background="#dfdfdd" />
+    <TextView
+        android:id="@+id/show_no_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/fr_group_list_not_join_the_group"
+        android:textColor="@color/group_list_gray"
+        android:visibility="gone" />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.bcr.jianxinIM.im.ui.widget.NestedListView
+                android:id="@+id/group_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:divider="@null" />
+        <TextView
+            android:id="@+id/foot_group_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="sss"
+            android:padding="10dp"
+            android:textColor="#999"
+            android:textSize="16sp"
+            android:visibility="gone"
+            />
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

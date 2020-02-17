@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Custom_Round_Image_View">
+        <attr name="radius" format="dimension" />
+        <attr name="left_top_radius" format="dimension" />
+        <attr name="right_top_radius" format="dimension" />
+        <attr name="right_bottom_radius" format="dimension" />
+        <attr name="left_bottom_radius" format="dimension" />
+    </declare-styleable>
+
+    <!--设置-->
+    <declare-styleable name="SettingItemView">
+        <attr name="item_image" format="reference" />
+        <attr name="item_image_height" format="dimension" />
+        <attr name="item_image_width" format="dimension" />
+        <attr name="item_content" format="string" />
+        <attr name="item_content_text_size" format="dimension" />
+        <attr name="item_content_text_color" format="color" />
+        <attr name="item_value" format="string" />
+        <attr name="item_value_text_size" format="dimension"/>
+        <attr name="item_value_text_color" format="color"/>
+        <attr name="item_divider" format="boolean" />
+        <attr name="item_tag_image_height" format="dimension" />
+        <attr name="item_tag_image_width" format="dimension" />
+        <attr name="item_tag_image" format="reference"/>
+        <attr name="item_switch" format="boolean"/>
+        <attr name="item_background" format="reference"/>
+        <attr name="item_null_background" format="boolean"/>
+        <attr name="item_show_selected" format="boolean"/>
+        <attr name="item_selected_image" format="reference"/>
+        <attr name="item_right_image" format="reference"/>
+
+    </declare-styleable>
+    <declare-styleable name="UserInfoItemView">
+        <attr name="item_userinfo_portrait" format="reference"/>
+        <attr name="item_userinfo_portrait_height" format="dimension"/>
+        <attr name="item_userinfo_portrait_width" format="dimension"/>
+        <attr name="item_userinfo_name" format="string"/>
+        <attr name="item_right_show" format="boolean"/>
+        <attr name="item_userinfo_divider" format="boolean"/>
+        <attr name="item_userifo_null_background" format="boolean"/>
+
+    </declare-styleable>
+    <declare-styleable name="SwitchButton">
+        <attr name="kswThumbDrawable" format="reference"/>
+        <attr name="kswThumbColor" format="color|reference"/>
+        <attr name="kswThumbMargin" format="dimension|reference"/>
+        <attr name="kswThumbMarginTop" format="dimension|reference"/>
+        <attr name="kswThumbMarginBottom" format="dimension|reference"/>
+        <attr name="kswThumbMarginLeft" format="dimension|reference"/>
+        <attr name="kswThumbMarginRight" format="dimension|reference"/>
+        <attr name="kswThumbWidth" format="dimension|reference"/>
+        <attr name="kswThumbHeight" format="dimension|reference"/>
+        <attr name="kswThumbRadius" format="dimension|reference"/>
+        <attr name="kswBackRadius" format="dimension|reference"/>
+        <attr name="kswBackDrawable" format="reference"/>
+        <attr name="kswBackColor" format="color|reference"/>
+        <attr name="kswFadeBack" format="boolean"/>
+        <attr name="kswBackMeasureRatio" format="float"/>
+        <attr name="kswAnimationDuration" format="integer"/>
+        <attr name="kswTintColor" format="color|reference"/>
+        <attr name="kswTextOn" format="string"/>
+        <attr name="kswTextOff" format="string"/>
+        <attr name="kswTextMarginH" format="dimension"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="NineGridLayout">
+        <attr name="sapcing" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="RatioImageView">
+
+        <!--宽度是否根据src图片的比例来测量（高度已知）-->
+        <attr name="is_width_fix_drawable_size_ratio" format="boolean" />
+        <!--高度是否根据src图片的比例来测量（宽度已知）-->
+        <attr name="is_height_fix_drawable_size_ratio" format="boolean" />
+        <!-- 高度设置，参考宽度，如0.5 , 表示 高度＝宽度×０.5 -->
+        <attr name="height_to_width_ratio" format="float" />
+        <!-- 宽度设置，参考高度，如0.5 , 表示 宽度＝高度×０.5 -->
+        <attr name="width_to_height_ratio" format="float" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width"  />
+        <attr name="border_color"  />
+        <attr name="border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+    <!-- 有边框和背景的View -->
+    <declare-styleable name="BorderTextView">
+        <attr name="strokeWidth01" format="dimension" />
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="strokeColor01" format="color" />
+        <attr name="enableBackColor" format="color" />
+        <attr name="contentBackColor" format="color" />
+        <attr name="contentPressedColor" format="color" />
+        <attr name="followTextColor" format="boolean" />
+    </declare-styleable>
+    <attr name="border_width" format="dimension" />
+    <attr name="border_color" format="color" />
+    <declare-styleable name="RoundedImageView">
+        <attr name="corner_radius" format="dimension" />
+        <attr name="border_width"  />
+        <attr name="border_color" />
+        <attr name="mutate_background" format="boolean" />
+        <attr name="oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+    <!--圆角头像-->
+    <declare-styleable name="SelectableRoundedImageView">
+        <attr name="sriv_left_top_corner_radius" format="dimension" />
+        <attr name="sriv_right_top_corner_radius" format="dimension" />
+        <attr name="sriv_left_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_right_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_border_width" format="dimension" />
+        <attr name="sriv_border_color" format="color" />
+        <attr name="sriv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+</resources>
